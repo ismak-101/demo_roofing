@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Roofing Solutions - Expert Roof Repair & Installation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <div class="logo">
+                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                        <path d="M20 5L35 15V25L20 35L5 25V15L20 5Z" fill="#2563eb"/>
+                        <path d="M20 15L30 20V30L20 25L10 30V20L20 15Z" fill="#60a5fa"/>
+                    </svg>
+                    <span>Premium Roofing</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#reviews">Reviews</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="btn-primary" onclick="openQuoteModal()">Get a Quote</button>
+                <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="#home" onclick="toggleMobileMenu()">Home</a></li>
+            <li><a href="#services" onclick="toggleMobileMenu()">Services</a></li>
+            <li><a href="#about" onclick="toggleMobileMenu()">About</a></li>
+            <li><a href="#reviews" onclick="toggleMobileMenu()">Reviews</a></li>
+            <li><a href="#contact" onclick="toggleMobileMenu()">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Protecting Your Home,<br><span class="highlight">One Roof at a Time</span></h1>
+                <p class="hero-subtitle">25+ years of expert roofing services. Licensed, insured, and trusted by over 500 homeowners in the area.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary btn-large" onclick="openQuoteModal()">Get Free Quote</button>
+                    <button class="btn-secondary btn-large" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact Us</button>
+                </div>
+                <div class="trust-badges">
+                    <div class="badge">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/>
+                        </svg>
+                        <span>5-Star Rated</span>
+                    </div>
+                    <div class="badge">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"/>
+                            <path d="M9 12L11 14L15 10"/>
+                        </svg>
+                        <span>Licensed & Insured</span>
+                    </div>
+                    <div class="badge">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7L12 12L22 7L12 2Z"/>
+                            <path d="M2 17L12 22L22 17"/>
+                            <path d="M2 12L12 17L22 12"/>
+                        </svg>
+                        <span>25+ Years Experience</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-preview" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <p>Comprehensive roofing solutions for every need</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Roof Installation</h3>
+                    <p>New roof installation with premium materials and expert craftsmanship</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h3>Roof Repair</h3>
+                    <p>Fast, reliable repairs for leaks, storm damage, and wear</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🔍</div>
+                    <h3>Roof Inspection</h3>
+                    <p>Thorough inspections to catch problems before they escalate</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">♻️</div>
+                    <h3>Roof Replacement</h3>
+                    <p>Complete roof replacement with minimal disruption</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">🌧️</div>
+                    <h3>Emergency Services</h3>
+                    <p>24/7 emergency response for urgent roofing issues</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">✨</div>
+                    <h3>Maintenance</h3>
+                    <p>Regular maintenance to extend your roof's lifespan</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Premium Roofing</h2>
+                    <p class="lead">Your trusted roofing partner since 1998</p>
+                    <p>With over 25 years of experience serving homeowners in the area, Premium Roofing has built a reputation for excellence, reliability, and honest service. We're a family-owned business that treats every roof like it's our own.</p>
+                    <p>Our team of certified professionals uses only the highest quality materials and follows strict safety protocols. We stand behind our work with comprehensive warranties and a commitment to customer satisfaction that has earned us hundreds of 5-star reviews.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">25+</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Satisfaction Rate</div>
+                        </div>
+                    </div>
+                    <div class="certifications">
+                        <p><strong>Certifications & Memberships:</strong></p>
+                        <ul>
+                            <li>Licensed & Insured</li>
+                            <li>BBB A+ Rated</li>
+                            <li>GAF Master Elite Contractor</li>
+                            <li>NRCA Member</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <svg width="100%" height="100%" viewBox="0 0 400 500">
+                            <rect width="400" height="500" fill="#e5e7eb"/>
+                            <text x="50%" y="50%" text-anchor="middle" fill="#6b7280" font-size="20" font-family="Inter">Professional Team Photo</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews" id="reviews">
+        <div class="container">
+            <div class="section-header">
+                <h2>What Our Customers Say</h2>
+                <p>Real reviews from real homeowners</p>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Outstanding work! They replaced our entire roof in just two days. The crew was professional, cleaned up perfectly, and the quality is exceptional. Highly recommend!"</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">MJ</div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">Michael Johnson</div>
+                            <div class="reviewer-location">Springfield</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"After storm damage, they came out the same day for an emergency repair. Fair pricing, excellent communication, and they worked with our insurance. Can't thank them enough!"</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">SD</div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">Sarah Davis</div>
+                            <div class="reviewer-location">Riverside</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Best roofing company in the area! They were transparent about costs, timeline, and process. Our new roof looks amazing and we had zero issues. Will use them again!"</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">RC</div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">Robert Chen</div>
+                            <div class="reviewer-location">Oakwood</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"From quote to completion, everything was smooth. They found and fixed issues we didn't even know existed. Honest, reliable, and reasonably priced. Absolutely recommend!"</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">EW</div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">Emily Williams</div>
+                            <div class="reviewer-location">Hillside</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"We've used them twice now - once for repair and once for replacement. Both times exceeded expectations. Professional team, quality materials, and stand by their work."</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">DM</div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">David Martinez</div>
+                            <div class="reviewer-location">Lakeside</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p class="review-text">"Top-notch service from start to finish. They answered all my questions, provided detailed estimates, and completed the job on time. My roof has never looked better!"</p>
+                    <div class="reviewer">
+                        <div class="reviewer-avatar">LT</div>
+                        <div class="reviewer-info">
+                            <div class="reviewer-name">Lisa Thompson</div>
+                            <div class="reviewer-location">Meadowbrook</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>Ready to protect your home? Contact us today!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p><a href="tel:555-123-4567">(555) 123-4567</a></p>
+                            <p class="small">Available 24/7 for emergencies</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div>
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@premiumroofing.com">info@premiumroofing.com</a></p>
+                            <p class="small">We respond within 24 hours</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h3>Address</h3>
+                            <p>123 Main Street<br>Your City, ST 12345</p>
+                            <p class="small">Monday - Friday: 8AM - 6PM<br>Saturday: 9AM - 4PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🌐</div>
+                        <div>
+                            <h3>Follow Us</h3>
+                            <div class="social-links">
+                                <a href="#" class="social-link">Facebook</a>
+                                <a href="#" class="social-link">Instagram</a>
+                                <a href="#" class="social-link">LinkedIn</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" onsubmit="handleContactForm(event)">
+                        <h3>Send Us a Message</h3>
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="tel" name="phone" placeholder="Your Phone">
+                        <textarea name="message" placeholder="How can we help you?" rows="5" required></textarea>
+                        <button type="submit" class="btn-primary btn-large">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                            <path d="M20 5L35 15V25L20 35L5 25V15L20 5Z" fill="#2563eb"/>
+                            <path d="M20 15L30 20V30L20 25L10 30V20L20 15Z" fill="#60a5fa"/>
+                        </svg>
+                        <span>Premium Roofing</span>
+                    </div>
+                    <p>Your trusted roofing partner since 1998. Quality work, honest service, guaranteed satisfaction.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#reviews">Reviews</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">Roof Installation</a></li>
+                        <li><a href="#">Roof Repair</a></li>
+                        <li><a href="#">Roof Inspection</a></li>
+                        <li><a href="#">Emergency Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📞 (555) 123-4567</li>
+                        <li>✉️ info@premiumroofing.com</li>
+                        <li>📍 123 Main Street<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your City, ST 12345</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Premium Roofing Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Quote Modal -->
+    <div class="modal" id="quoteModal">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeQuoteModal()">&times;</button>
+            <h2>Get Your Free Quote</h2>
+            <p>Fill out the form below and we'll get back to you within 24 hours</p>
+            <form class="quote-form" onsubmit="handleQuoteForm(event)">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Your Name *" required>
+                    <input type="email" name="email" placeholder="Your Email *" required>
+                </div>
+                <div class="form-row">
+                    <input type="tel" name="phone" placeholder="Your Phone *" required>
+                    <input type="text" name="address" placeholder="Property Address *" required>
+                </div>
+                <select name="service" required>
+                    <option value="">Select Service *</option>
+                    <option value="installation">New Roof Installation</option>
+                    <option value="repair">Roof Repair</option>
+                    <option value="replacement">Roof Replacement</option>
+                    <option value="inspection">Roof Inspection</option>
+                    <option value="emergency">Emergency Service</option>
+                    <option value="maintenance">Maintenance</option>
+                </select>
+                <textarea name="details" placeholder="Tell us about your project..." rows="4"></textarea>
+                <button type="submit" class="btn-primary btn-large">Request Free Quote</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
